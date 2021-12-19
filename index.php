@@ -2,7 +2,9 @@
 
 $name = "Ouahmane mostapha";
 $age = " j'ai 25ans";
-echo "helo";
+//echo $name.$age;
+//echo "hello {$name}";
+echo "hello $name";
 
 
 ?>
