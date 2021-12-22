@@ -16,13 +16,17 @@
     <h1><?php echo $page_hading; ?></h1>
     <form action="" method="GET">
         <label for="title">votre title</label>
-        <input type="text" name="title" value=" Entre votre title">
+        <input type="text" name="title" value="<?php if(isset($_GET['title'])){
+            echo $_GET['title'];
+        }; ?>">
         <br>
         </br>
         </br>
 
         <label for="text">votre texte</label>
-        <textarea name="texte" id="texte" cols="80" rows="8">Entre votre texte</textarea>
+        <textarea name="texte" id="texte" cols="80" rows="8"><?php if(isset($_GET['texte'])){
+            echo $_GET['texte'];
+        };?></textarea>
         </br>
         </br>
         </br>
@@ -31,11 +35,11 @@
     </form>
     <?php
     if (isset($_GET['title'])) {
-        echo $_GET['title'];
+        echo $_GET['title']."<br>";
         //isset هل هناك شيء اسمه العنوان
     }
     if (isset($_GET['texte'])) {
-        echo $_GET['texte'];
+        echo $_GET['texte']."<br>";
     }
     ?>
 </body>
