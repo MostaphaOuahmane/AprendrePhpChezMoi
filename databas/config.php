@@ -12,7 +12,6 @@ $options = array(
 );
 
 
-echo " vous étais bien contacte avec database super";
 
 
 //هنا الاعلان عن قاعدة البيانات 
