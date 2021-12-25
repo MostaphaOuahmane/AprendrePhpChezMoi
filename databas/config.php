@@ -3,7 +3,7 @@ $hostname = "localhost";
 $database_name = "ideasdb";
 $database_user = "mostapha";
 $database_user_password = "123"; 
-$dsn = "mysql:host=$hostname;dbname=$database_name";
+
 
 
 $options = array(
